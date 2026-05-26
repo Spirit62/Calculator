@@ -2,10 +2,10 @@
 let calc = ""
 function calculation(numOp){
   calc += numOp;
-  if (numOp !==''){
+  if (numOp ==='='){
     return console.log(calc);
   }
-  else{
+  else if (numOp ===''){
     calc ='';
     return console.log("Cleared");
   }
