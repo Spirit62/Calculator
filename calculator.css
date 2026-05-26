@@ -1,0 +1,44 @@
+body{
+  padding:150px;
+  background-color: rgb(208, 215, 241);
+}
+
+
+.screen-container{
+  width:350px;
+  background-color: rgb(144, 145, 218);
+  display:flex;
+  justify-content: center;
+  padding:80px 15px;
+  margin-bottom: 20px;
+  max-width: 310px;
+  border-radius: 30px 30px 0px 0px;
+  border: 1px solid rgb(121, 127, 241);
+}
+
+.container{
+  display: flex;
+  background-color: rgb(169, 187, 249);
+  padding:0px 15px 8px 15px; 
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  max-width: 310px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 1px solid rgb(121, 127, 241);
+}
+.Row{
+ display:flex;
+ flex-direction: row;
+}
+.Number, .Special, .Operation{
+  padding:19px 20px;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  width:60px;
+  display:flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid rgb(121, 127, 241);
+}
