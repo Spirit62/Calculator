@@ -44,3 +44,13 @@ body{
   border: 2px solid rgb(121, 127, 241);
   aspect-ratio: 1/1;
 }
+.Number:hover, .Special:hover, .Operation:hover{
+  background-color: rgb(121, 127, 241);
+  color: white;
+  cursor: pointer;
+}
+.Number:active, .Special:active, .Operation:active{
+  background-color: rgb(121, 127, 241);
+  color: white;
+  transform: scale(0.95);
+}
