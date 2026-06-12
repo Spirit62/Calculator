@@ -1,56 +1,89 @@
-body{
-  padding:150px;
-  background-color: rgb(208, 215, 241);
+body {
+  padding: 150px;
+  background-color: #0f172a; /* Deep slate dark background */
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-
-.screen-container{
-  width:100%;
-  background-color: rgb(144, 145, 218);
-  display:flex;
-  justify-content: center;
-  padding:70px 15px;
-  margin-bottom: 20px;
-  border-radius: 30px 30px 0px 0px;
-  border: 1px solid rgb(121, 127, 241);
-  font-family: Arial;
-  font-size: 18px;
-}
-
-.container{
+.container {
   display: flex;
-  background-color: rgb(169, 187, 249);
-  padding:0px 15px 8px 15px; 
+  background-color: #1e293b; 
+  padding: 0px 15px 15px 15px; 
   margin: auto;
   flex-direction: column;
   align-items: center;
   max-width: 310px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5); /* Deeper, realistic shadow */
   border-radius: 30px;
-  border: 1px solid rgb(121, 127, 241);
+  border: 1px solid white;
 }
-.Row{
- display:flex;
- flex-direction: row;
+
+.screen-container {
+  border:none;
+  position: relative;
+  width: 100%;
+  background-color: #0f172a; /* Sunken dark screen */
+  display: flex;
+  justify-content: right;
+  padding: 70px 15px;
+  margin-top: 15px; 
+  margin-bottom: 20px;
+  border-radius: 20px; 
 }
-.Number, .Special, .Operation{
-  padding:19px 20px;
-  margin-bottom: 8px;
+
+.Result {
+  color: #f8fafc; /* Crisp white text */
+  font-size: 35px;
+  position: absolute;
+  bottom: 8px;
+  right: 15px; /* Adjusted padding slightly */
+  margin: 0;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Base button styles - now seamless without borders */
+.Number, .Special, .Operation {
+  padding: 19px 20px;
+  margin-bottom: 10px;
   margin-right: 10px;
-  width:60px;
-  display:flex;
+  width: 60px;
+  display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  border: 2px solid rgb(121, 127, 241);
+  border: none; 
   aspect-ratio: 1/1;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.1s ease; /* Smooth animations */
 }
-.Number:hover, .Special:hover, .Operation:hover{
-  background-color: rgb(121, 127, 241);
-  color: white;
-  cursor: pointer;
+
+/* Specific color definitions for button types */
+.Number {
+  background-color: #334155; /* Medium slate gray */
+  color: #f8fafc;
 }
-.Number:active, .Special:active, .Operation:active{
-  background-color: rgb(121, 127, 241);
-  color: white;
-  transform: scale(0.95);
+
+.Special {
+  background-color: #475569; /* Light slate for utilities (Clear, dots, equals) */
+  color: #f8fafc;
+}
+
+.Operation {
+  background-color: #ea580c; /* Vibrant orange for math symbols */
+  color: #ffffff;
+}
+
+/* Hover States */
+.Number:hover { background-color: #475569; cursor: pointer; }
+.Special:hover { background-color: #64748b; cursor: pointer; }
+.Operation:hover { background-color: #f97316; cursor: pointer; }
+
+/* Active (Click) States */
+.Number:active, .Special:active, .Operation:active {
+  transform: scale(0.92);
 }

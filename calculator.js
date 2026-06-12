@@ -1,12 +1,15 @@
 
 let calc = ""
 function calculation(numOp){
-  calc += numOp;
-  if (numOp ==='='){
-    return console.log(calc);
-  }
-  else if (numOp ===''){
+   if (numOp ===''){
     calc ='';
-    return console.log("Cleared");
+    document.querySelector('.Result')
+     .innerHTML= '';
+     return;
   }
+  calc += numOp;
+    document.querySelector('.Result')
+     .innerHTML= calc;
+
+ 
 }

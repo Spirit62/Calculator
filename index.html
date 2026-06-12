@@ -9,14 +9,14 @@
 
     <div class="container">
       <div class="screen-container">
-        Open console for calculation result
+        <div class="Result"></div>
       </div>
       <div class="num-container">
         <div class="Row">
           <button onclick="calculation('1');" class="Number">1</button>
           <button onclick="calculation('2');" class="Number">2</button>
           <button onclick="calculation('3');" class="Number">3</button>
-          <button onclick="calculation('+');" class="Number">+</button>
+          <button onclick="calculation('+');" class="Operation">+</button>
         </div>
 
         <div class="Row">
@@ -30,13 +30,14 @@
           <button onclick="calculation('7');" class="Number">7</button>
           <button onclick="calculation('8');" class="Number">8</button>
           <button onclick="calculation('9');" class="Number">9</button>
-          <button onclick="calculation('*');" class="Operation">X</button>
+          <button onclick="calculation('*');" class="Operation">x</button>
         </div>
 
         <div class="Row">
           <button onclick="calculation('0');" class="Number">0</button>
           <button onclick="calculation('.');" class="Special">.</button>
-          <button onclick="calc = eval(calc); console.log(calc); calc ='';" class="Special" >=</button>
+          <button onclick="calc = eval(calc); document.querySelector('.Result').innerHTML= calc;
+          calc ='';" class="Special" >=</button>
           <button onclick="calculation('/');" class="Operation">/</button>
         </div>
 
