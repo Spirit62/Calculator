@@ -4,7 +4,7 @@ A simple web-based calculator built with HTML, CSS, and JavaScript. It features 
 
 ## Preview
 
-![Calculator Preview](image_b0f020.png)
+![Calculator Preview](preview-calc.jpg.jpeg)
 
 ## Features
 
